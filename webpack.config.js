@@ -5,7 +5,6 @@ module.exports = {
   entry: path.resolve(__dirname, 'app'),
   output: {
     path: path.resolve(__dirname, 'build'),
-    publicPath: './',
     filename: 'bundle.js'
   },
   module: {
@@ -14,14 +13,17 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: '/node_modules/',
         use: ['babel-loader']
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       }
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx', '.css']
   },
   devServer: {
-    contentBase:  path.resolve(__dirname, 'build'),
     port: 3000
   },
   plugins: [
