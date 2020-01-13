@@ -5,7 +5,6 @@ module.exports = {
   entry: path.resolve(__dirname, 'app'),
   output: {
     path: path.resolve(__dirname, 'build'),
-    publicPath: './',
     filename: 'bundle.js'
   },
   module: {
@@ -21,7 +20,6 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   devServer: {
-    contentBase:  path.resolve(__dirname, 'build'),
     port: 3000
   },
   plugins: [
