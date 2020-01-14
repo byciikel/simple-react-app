@@ -1,15 +1,15 @@
 import React from 'react'
-import '../css/tailwind.css'
+import { HashRouter, Switch, Route } from 'react-router-dom'
+import HomePage from '../pages/home/Home'
+import AboutPage from '../pages/about/About'
 
 export default function App() {
   return (
-    <div className="text-center">
-      <header className="bg-green-900 m-6 p-6 rounded shadow-lg">
-        <h1 className="text-white text-3xl">Hallo Dunia React!</h1>
-      </header>
-      <p className="text-base">
-        Ubah kode pada <code>src/router/App.js</code> untuk melihat perubahan.
-      </p>
-    </div>
+    <HashRouter>
+      <Switch>
+        <Route exact path='/' component={HomePage}/>
+        <Route exact path='/about' component={AboutPage}/>
+      </Switch>
+    </HashRouter>
   )
 }
