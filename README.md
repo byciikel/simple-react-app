@@ -1,4 +1,4 @@
-# Simple React App
+# Simple React App - Configure Webpack
 
 ### How to run?
 1. Install dependency
