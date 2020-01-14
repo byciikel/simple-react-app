@@ -1,4 +1,4 @@
-# Simple React App
+# Simple React App - Configure React Router
 
 ### How to run?
 1. Install dependency
