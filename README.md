@@ -1,4 +1,4 @@
-# Simple React App
+# Simple React App - Configure Tailwind CSS
 
 ### How to run?
 1. Install dependency
